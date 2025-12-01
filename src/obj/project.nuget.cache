@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "MlYbP5ScsKk=",
+  "success": true,
+  "projectFilePath": "/home/jakub/dev/csharp/RealTime-TextBasedZombieRPG/src/src.csproj",
+  "expectedPackageFiles": [
+    "/home/jakub/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

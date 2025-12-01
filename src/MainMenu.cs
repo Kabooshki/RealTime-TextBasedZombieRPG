@@ -2,10 +2,10 @@ using System;
 using System.Threading;
 using System.Collections.Generic;
 
-public class Menu
+public class MainMenu
 {
     public static List<Option> menu_options;
-    public Menu()
+    public MainMenu()
     {
         menu_options = new List<Option>
         {
@@ -81,12 +81,31 @@ public class Menu
             Console.WriteLine("Enter your Player's Stamina (Maximum 100)");
             int stamina = int.Parse(Console.ReadLine());
 
-            Player player = new Player(health, stamina);
+            //Player player = new Player(health, stamina);
             WriteTemporaryMessage("Welcome To The Apocalypse!");
         }
         catch (FormatException e)
         {
             WriteTemporaryMessage("Invalid Data!");
+        }
+    }
+
+    static int SetStat(string statType, int limit)
+    {
+        while (true)
+        {
+            try
+            {
+                Console.WriteLine($"Enter your Player's {statType} (Maximum: {limit})");
+                int stat = int.Parse(Console.ReadLine());
+
+                if (stat >= 0 && stat <= limit) return stat;
+                else Console.WriteLine($"{statType} must be above 0 and below {limit}!");
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Invalid value.");
+            }
         }
     }
 }

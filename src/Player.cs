@@ -1,6 +1,6 @@
-using System;
+using System.Collections.Generic;
 
-public class Player 
+public class Player
 {
     public int Health;
     public int Stamina;
@@ -12,10 +12,14 @@ public class Player
     public int Weight;
     public int Strength;
     public int EyeSight;
+    public static string[] StatTypes = { "" };
+    public Dictionary<string, int> PlayerStats = new Dictionary<string, int>();
     
-    public Player(int health, int stamina) 
+    public Player(List<int> stats)
     {
-        this.Health = health;
-        this.Stamina = stamina;
+        for (int i = 0; i < StatTypes.Length; i++)
+        {
+            PlayerStats.Add(StatTypes[i], stats[i]);
+        }
     }
 }

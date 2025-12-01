@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\GameMenu.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\GameMenu.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\MainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\MainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\src.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -19,7 +19,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\georg\\AppData\\Local\\SourceServer\\0471d7daa885ab9596a4cff7da892fc1b785fc5dffb420e6222756f3821f898f\\src\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,19 +30,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\georg\\AppData\\Local\\SourceServer\\0471d7daa885ab9596a4cff7da892fc1b785fc5dffb420e6222756f3821f898f\\src\\Player.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\0471d7daa885ab9596a4cff7da892fc1b785fc5dffb420e6222756f3821f898f\\src\\Player.cs",
-              "ToolTip": "C:\\Users\\georg\\AppData\\Local\\SourceServer\\0471d7daa885ab9596a4cff7da892fc1b785fc5dffb420e6222756f3821f898f\\src\\Player.cs",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\0471d7daa885ab9596a4cff7da892fc1b785fc5dffb420e6222756f3821f898f\\src\\Player.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAEwBAAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "GameMenu.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\GameMenu.cs",
+              "RelativeDocumentMoniker": "src\\GameMenu.cs",
+              "ToolTip": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\GameMenu.cs",
+              "RelativeToolTip": "src\\GameMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T15:24:32.166Z",
+              "WhenOpened": "2025-12-01T17:57:54.873Z",
               "EditorCaption": ""
             },
             {
@@ -52,33 +53,33 @@
               "RelativeDocumentMoniker": "src\\src.csproj",
               "ToolTip": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\src.csproj",
               "RelativeToolTip": "src\\src.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-12-01T13:19:38.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\Menu.cs",
-              "RelativeDocumentMoniker": "src\\Menu.cs",
-              "ToolTip": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\Menu.cs",
-              "RelativeToolTip": "src\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\MainMenu.cs",
+              "RelativeDocumentMoniker": "src\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\MainMenu.cs",
+              "RelativeToolTip": "src\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T13:08:00.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\Player.cs",
               "RelativeDocumentMoniker": "src\\Player.cs",
               "ToolTip": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\Player.cs",
               "RelativeToolTip": "src\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T13:07:58.664Z",
               "EditorCaption": ""
@@ -91,7 +92,7 @@
               "RelativeDocumentMoniker": "src\\Game.cs",
               "ToolTip": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\Game.cs",
               "RelativeToolTip": "src\\Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T13:07:51.404Z",
               "EditorCaption": ""

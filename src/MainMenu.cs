@@ -76,13 +76,24 @@ public class MainMenu
     {
         try
         {
-            Console.WriteLine("Enter your Player's Health (Maximum: 100)");
-            int health = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter your Player's Stamina (Maximum 100)");
-            int stamina = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter your Player's Health (Maximum: 100)");
+            //int health = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter your Player's Stamina (Maximum 100)");
+            //int stamina = int.Parse(Console.ReadLine());
 
             //Player player = new Player(health, stamina);
-            WriteTemporaryMessage("Welcome To The Apocalypse!");
+            //WriteTemporaryMessage("Welcome To The Apocalypse!");
+            Console.Clear();
+            string[] columns = ["Stat", "Value"]; 
+            string[][] player_stats = new string[6][];
+            player_stats[0] = new string[] {"Health", "100"};
+            player_stats[1] = new string[] {"Stamina", "100"};
+            player_stats[2] = new string[] {"Hunger", "150"};
+            player_stats[3]= new string[] {"Thirst", "150"};
+            player_stats[4] = new string[] {"Speed", "1.2"};
+            player_stats[5] = new string[] {"Smell", "0"};
+            TextTable stat_table = new TextTable(columns, player_stats);
+            Console.ReadLine();
         }
         catch (FormatException e)
         {

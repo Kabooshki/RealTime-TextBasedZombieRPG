@@ -1,22 +1,21 @@
+using System;
+
 public class Player 
 {
-    public int health;
-    public int stamina;
-    public int hunger;
-    public int thirst;
-    public int speed;
-    public int smell;
-    public int height;
-    public int weight;
-    public int strength;
-    public int eye_sight;
+    public int Health;
+    public int Stamina;
+    public int Hunger;
+    public int Thirst;
+    public int Speed;
+    public int Smell;
+    public int Height;
+    public int Weight;
+    public int Strength;
+    public int EyeSight;
     
-    public Player() 
+    public Player(int health, int stamina) 
     {
-        Console.WriteLine("Enter your Player's Health (Maximum: 100)");
-        health = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Enter your Player's Stamina (Maximum 100)");
-        stamina = Convert.ToInt32(Console.ReadLine());
-
+        this.Health = health;
+        this.Stamina = stamina;
     }
 }

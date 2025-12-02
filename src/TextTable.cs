@@ -9,9 +9,11 @@ public class TextTable {
                 Columns = columns,
                 EnableCount = false
             });
-       foreach (string[] row in rows){
+
+       foreach (string[] row in rows) {
            table.AddRow(row);
-       } 
+       }
+
        table.Write();
        Console.WriteLine();
    } 

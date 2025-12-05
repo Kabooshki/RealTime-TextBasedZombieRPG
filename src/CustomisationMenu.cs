@@ -1,21 +1,22 @@
 using System;
 using System.Collections.Generic;
 
-public class GameMenu
+public class CustomisationMenu
 {
 	public Player CurrentPlayer;
 	public static List<Option> MenuOptions;
-	public GameMenu(Player currentPlayer)
+	public CustomisationMenu(Player currentPlayer)
 	{
 		this.CurrentPlayer = currentPlayer;
 		MenuOptions = new List<Option>
 		{
+			new Option("Customise Character", () => ParseClothing(CurrentPlayer)),
 			new Option("View Stats", () => CurrentPlayer.DisplayStats()),
 			new Option("Return To Menu", () => { })
 		};
 	}
 
-	public void Play()
+	public void Customise()
 	{
 		int index = 0;
 
@@ -49,4 +50,33 @@ public class GameMenu
 			}
 		}
 	}
+
+	static void ParseClothing(Player player)
+	{	
+	    Console.Clear();
+	    List<string> playerInitClothing = new();
+	    foreach (string clothing in Player.PlayerClothingOptions)
+	    {
+		playerInitClothing.Add(SetClothing(clothing));
+	    }
+
+	    Console.Clear();
+	    player.CustomiseClothing(playerInitClothing);
+	    player.DisplayClothing();
+
+		
+	}
+
+	static string SetClothing(string clothingOption)
+	{
+		while (true)
+		{
+			Console.WriteLine($"Enter your Player's {clothingOption}: ");
+			string clothing = Console.ReadLine();
+
+			return clothing;
+		}
+	}
+
+
 }

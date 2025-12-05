@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\src.csproj": {}
+    "/home/jakub/dev/csharp/RealTime-TextBasedZombieRPG/src/src.csproj": {}
   },
   "projects": {
-    "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\src.csproj": {
+    "/home/jakub/dev/csharp/RealTime-TextBasedZombieRPG/src/src.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\src.csproj",
+        "projectUniqueName": "/home/jakub/dev/csharp/RealTime-TextBasedZombieRPG/src/src.csproj",
         "projectName": "src",
-        "projectPath": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\src.csproj",
-        "packagesPath": "C:\\Users\\georg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\georg\\Desktop\\ZombieRPG\\RealTime-TextBasedZombieRPG\\src\\obj\\",
+        "projectPath": "/home/jakub/dev/csharp/RealTime-TextBasedZombieRPG/src/src.csproj",
+        "packagesPath": "/home/jakub/.nuget/packages/",
+        "outputPath": "/home/jakub/dev/csharp/RealTime-TextBasedZombieRPG/src/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\georg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/jakub/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -66,12 +60,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.9, 9.0.9]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

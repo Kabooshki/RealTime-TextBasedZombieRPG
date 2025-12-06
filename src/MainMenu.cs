@@ -1,6 +1,7 @@
 using System;
 using System.Threading;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 
 public class MainMenu
 {
@@ -65,11 +66,32 @@ public class MainMenu
             }
             else
             {
-                Console.Write(" ");
+                Console.Write("  ");
             }
 
             Console.WriteLine(option.Name);
         }
+    }
+
+    public static void WriteStatMenu(Dictionary<string, int[]> stats, string selectedOption, int sparePoints)
+    {
+        Console.Clear();
+
+        foreach (var option in stats)
+        {
+            if (selectedOption == option.Key)
+            {
+                Console.Write("->");
+            }
+            else
+            {
+                Console.Write("  ");
+            }
+
+            Console.WriteLine($"{option.Key,-15}:  {option.Value[0]}");
+        }
+
+        Console.WriteLine($"\nRemaining Points => {sparePoints}");
     }
 
     static void InstantiatePlayer()
@@ -77,10 +99,15 @@ public class MainMenu
         try
         {
             Console.Clear();
+
+            Dictionary<string, int[]> stats = SetStats();
+
+            // "Health", "Stamina", "Hunger", "Thirst", "Speed", "Smell"
             List<int> playerInitStats = new();
-            foreach (string stat in Player.StatTypes)
+
+            foreach (KeyValuePair<string, int[]> stat in stats)
             {
-                playerInitStats.Add(SetStat(stat, 100));
+                playerInitStats.Add(stat.Value[0]);
             }
 
             Console.Clear();
@@ -96,22 +123,81 @@ public class MainMenu
         }
     }
 
-    static int SetStat(string statType, int limit)
+    private static Dictionary<string, int[]> SetStats()
+    {
+        // Key -> stat type
+        // Value[0] -> Base points
+        // Value[1] -> Min points
+        // Value[2] -> Max points
+        Dictionary<string, int[]> stats = new Dictionary<string, int[]>();
+        stats.Add("Health", [50, 30, 100]);
+        stats.Add("Stamina", [50, 30, 100]);
+        stats.Add("Hunger", [20, 10, 40]);
+        stats.Add("Thirst", [20, 10, 40]);
+        stats.Add("Speed", [24, 10, 50]);
+        stats.Add("Smell", [5, 3, 20]);
+
+        int sparePoints = 25;
+
+        ConsoleKeyInfo keyInfo;
+        int index = 0;
+        bool running = true;
+
+        while (running)
+        {
+            WriteStatMenu(stats, Player.StatTypes[index], sparePoints);
+
+            keyInfo = Console.ReadKey();
+
+            switch (keyInfo.Key)
+            {
+                case ConsoleKey.UpArrow:
+                    if (index - 1 >= 0)
+                    {
+                        index--;
+                    }
+                    break;
+
+                case ConsoleKey.DownArrow:
+                    if (index + 1 < stats.Count)
+                    {
+                        index++;
+                    }
+                    break;
+
+                // Decrease Stat
+                case ConsoleKey.LeftArrow:
+                    if (stats[Player.StatTypes[index]][0] > stats[Player.StatTypes[index]][1])
+                    {
+                        stats[Player.StatTypes[index]][0]--;
+                        sparePoints++;
+                    }
+                    break;
+
+                // Increase Stat
+                case ConsoleKey.RightArrow:
+                    if (sparePoints > 0 && stats[Player.StatTypes[index]][0] < stats[Player.StatTypes[index]][2])
+                    {
+                        stats[Player.StatTypes[index]][0]++;
+                        sparePoints--;
+                    }
+                    break;
+
+                case ConsoleKey.Enter:
+                    running = false;
+                    break;
+            }
+        }
+
+        return stats;
+    }
+
+    // Stub
+    private bool FinishPlayerCreation()
     {
         while (true)
         {
-            try
-            {
-                Console.WriteLine($"Enter your Player's {statType} (Maximum: {limit})");
-                int stat = int.Parse(Console.ReadLine());
-
-                if (stat >= 0 && stat <= limit) return stat;
-                else Console.WriteLine($"{statType} must be above 0 and below {limit}!");
-            }
-            catch (FormatException e)
-            {
-                Console.WriteLine("Invalid value.");
-            }
+            return true;
         }
     }
 }

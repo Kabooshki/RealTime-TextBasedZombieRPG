@@ -13,7 +13,7 @@ Task: Awesome Task Title
 
 This Task will...
 
-## MainTak Parent
+## MainTask Parent
 
 <!-- The link below should link to its MainTask Parent. -->
 

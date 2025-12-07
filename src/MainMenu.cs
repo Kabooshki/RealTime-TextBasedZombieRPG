@@ -114,8 +114,8 @@ public class MainMenu
             Player player = new Player(playerInitStats);
             player.DisplayStats();
 
-            GameMenu game = new GameMenu(player);
-            game.Play();
+            CustomisationMenu custom = new CustomisationMenu(player);
+            custom.Customise();
         }
         catch (FormatException e)
         {

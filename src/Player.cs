@@ -3,19 +3,10 @@ using System.Collections.Generic;
 
 public class Player
 {
-    // public string Name { get; set; }
-    public int Health;
-    public int Stamina;
-    public int Hunger;
-    public int Thirst;
-    public int Speed;
-    public int Smell;
-    public int Height;
-    public int Weight;
-    public int Strength;
-    public int EyeSight;
     public static string[] StatTypes = { "Health", "Stamina", "Hunger", "Thirst", "Speed", "Smell" };
+    public static string[] PlayerClothingOptions = {"Head", "Face", "Neck", "Torso-Under", "Torso-Over", "Hands", "Back", "Waist", "Legs", "Feet"};
     public Dictionary<string, int> PlayerStats;
+    public Dictionary<string, string> PlayerClothing;
     
     public Player(List<int> stats)
     {
@@ -23,6 +14,24 @@ public class Player
         for (int i = 0; i < StatTypes.Length; i++)
         {
             PlayerStats.Add(StatTypes[i], stats[i]);
+        }
+    }
+
+    //public void SetStat(string chosenStat, int newValue)
+    //{
+    //    if (PlayerStats.ContainsKey(chosenStat))
+    //    {
+    //        PlayerStats[chosenStat] = newValue;
+    //
+    //    }
+    //}
+
+    public void CustomiseClothing(List<string> clothing)
+    {
+        PlayerClothing = new Dictionary<string, string>();
+        for (int i = 0; i < PlayerClothingOptions.Length; i++)
+        {
+            PlayerClothing.Add(PlayerClothingOptions[i], clothing[i]);
         }
     }
 
@@ -41,4 +50,22 @@ public class Player
         TextTable statTable = new TextTable(columns, playerStats);
         Console.ReadLine();
     }
+
+    public void DisplayClothing()
+    {
+        Console.WriteLine("Current Customisations:\n\n");
+        string[] columns = ["Body Part", "Clothing"];
+        string[][] playerClothing = new string[PlayerClothingOptions.Length][];
+        int index = 0;
+        foreach (KeyValuePair<string, string> clothing in PlayerClothing)
+        {
+            playerClothing[index] = [clothing.Key, clothing.Value];
+            index++;
+        }
+        
+        TextTable statTable = new TextTable(columns, playerClothing);
+        Console.ReadLine();
+
+    }
+
 }
